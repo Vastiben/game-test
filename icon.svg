@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <title>Empire</title>
+  <rect width="512" height="512" fill="#2f6f5e"/>
+  <g transform="translate(256 262)">
+    <path d="M-150 -10 L0 -120 L150 -10 V120 H-150 Z" fill="#fff7ea"/>
+    <path d="M-170 -10 L0 -138 L170 -10 L150 14 L0 -98 L-150 14 Z" fill="#d94f4f"/>
+    <rect x="-34" y="26" width="68" height="94" rx="6" fill="#2f3a4f"/>
+    <rect x="-118" y="10" width="62" height="52" rx="6" fill="#9ad1e0"/>
+    <rect x="56" y="10" width="62" height="52" rx="6" fill="#9ad1e0"/>
+  </g>
+</svg>
