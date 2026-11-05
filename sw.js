@@ -3,7 +3,16 @@
 // Fichiers du jeu (noms à empreinte) : cache d'abord.
 const CACHE = "empire-v1";
 
-self.addEventListener("install", () => self.skipWaiting());
+// Le garage de départ est gardé d'office : sans réseau, le premier écran a son image ; les autres se gardent à la demande.
+self.addEventListener("install", (event) => {
+  event.waitUntil(
+    caches
+      .open(CACHE)
+      .then((c) => c.add("./art/bureau-1-garage.webp"))
+      .catch(() => undefined),
+  );
+  self.skipWaiting();
+});
 self.addEventListener("activate", (event) => {
   event.waitUntil(
     caches
